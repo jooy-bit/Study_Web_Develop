@@ -22,6 +22,7 @@ public class A11StringMethod {
             //현재 message에서 마지막 인덱스는 length-1 (0부터 시작하니까)
 
              //3. string one - concat, equals, startsWith, EndsWith
+        System.out.println("message.indexOf(\"World\") :" + message.indexOf("World")); //if it can't find the word, return -1
         System.out.println("message.concat(\"짱짱\") :" + message.concat(" 짱짱")); //return is boolean
         System.out.println("message.startsWith(\"Hello\") :" + message.startsWith("Hello"));
         System.out.println("message.endsWith(\")\") :" + message.endsWith(")"));
@@ -30,11 +31,27 @@ public class A11StringMethod {
              //4. int two - subtring
         System.out.println("message.substring(1, 10) :"+ message.substring(1, 10));
         System.out.println("message.substring(2, 4) :"+ message.substring(2, 4));
+        //endIndex는 포함되지 않는다
 
 
              //5. string(char) two - replace 
         System.out.println(message.replace("Hello", "Bye"));
-             
+        message = "hello";
+        System.out.println("message.equals(\"hello\")" + message.equals("hello"));
+        System.out.println("message.equals(\"Hello\")" + message.equals("Hello"));
+
+            //return types
+            //boolean   - equals, endsWith, startsWith, isEmpty
+            //string    - toUpperCase, substring, concat, replace
+            //int       - length, indexOf
+            //char      - charAt, 
+
+
+
+            // 질문 공유
+            //1> 메소드의 리턴타입에 따라 결과를 저장할 변수를 일치하는 형식으로 선언
+            //2> 문자리턴값으로 또 메소드 실행 가능
+            // int len = message.length(); ==> 이걸 저장해서 데이터 처리가 중요!!
     }
         //자바 String의 중요한 메소드 10가지씩 조사해서 테스트 해보기
         //1. indexof()      //for finding the index of the first occurrence if a character or a string in the given string
