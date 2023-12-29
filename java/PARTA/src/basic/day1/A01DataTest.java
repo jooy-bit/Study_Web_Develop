@@ -1,8 +1,9 @@
-package ToyProject;
+package basic.day1;
 
-public class a
- {
+public class A01DataTest {
+
     public static void main(String[] args) {
         
     }
+    
 }
