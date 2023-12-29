@@ -43,7 +43,7 @@ public class A07CharacterTest {
 		// 예시 : 14부터 20 => 20-14+1 = 7개
 		
 		
-		//
+		//다국어 문자가 아닌 영문,숫자,기호는 아스키를 기반으로 함
 		int code3 = c3;			//c3은 '가' 를 int 로 자동 캐스팅하면 44032
 		System.out.println("code3 : " + code3);		//44033
 		System.out.println("문자로 캐스팅한 code3 : " + (char)code3);		//int를 char로 강제 캐스팅. '각'
@@ -59,6 +59,9 @@ public class A07CharacterTest {
 		//문자형으로는 덧셈이 오류.  1 리터럴은 int 정수이므로 char 변수 c1 값과 바로 덧셈 못함.
 		//c1 = c1 +1;
 		//c1++ 증가연산자는 가능. 자동으로 캐스팅하여 덧셈. 
+		
+
+
 		
 	}
 
