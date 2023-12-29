@@ -60,6 +60,13 @@ public class A07CharacterTest {
 		//c1 = c1 +1;
 		//c1++ 증가연산자는 가능. 자동으로 캐스팅하여 덧셈. 
 		
+		//////////////////////////
+		c3 = '가';
+		c4 = '\uac00';
+		c5 = 44033;
+		c6 = 'ㅁ';
+
+		System.out.println((int)c3);
 
 
 		
