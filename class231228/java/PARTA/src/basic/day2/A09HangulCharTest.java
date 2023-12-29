@@ -11,8 +11,10 @@ public class A09HangulCharTest {
         while (codeNa<= codeNet) {
             System.out.print((char)codeNa++);
         }
+        System.out.print("\n"+start); //start는 변경되지 않았음. codeNa 값만 변경
         
-        codeNa = start;
+        codeNa = start; //그래서 그냥 사용 가능
+
         //모두 몇개의 문자가 있는지 개수를 구하시오.
         System.out.println("\n'나'에서 '냿'까지 문자의 개수는 "+(codeNet-codeNa+1)+"개 입니다.");
         
