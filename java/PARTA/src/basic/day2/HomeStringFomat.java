@@ -1,7 +1,5 @@
 package basic.day2;
 
-import java.util.Locale;
-
 public class HomeStringFomat {
     
    public static void main(String[] args) {
