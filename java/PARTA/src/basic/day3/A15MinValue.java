@@ -1,6 +1,6 @@
 package basic.day3;
 
-public class A14MinValue {
+public class A15MinValue {
     public static void main(String[] args) {
         //예시
         int n1 = 23, n2 = 34, n3 = 32;
