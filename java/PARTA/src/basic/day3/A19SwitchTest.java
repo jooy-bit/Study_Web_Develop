@@ -6,36 +6,38 @@ import java.util.Scanner;//키보드 입력 클래스
 public class A19SwitchTest {
 
 	public static void main(String[] args) {
-		
-		System.out.println(":::: 쇼핑몰 사용자 마이페이지 ::::");
-		System.out.println("1:장바구니   2:찜 상품   3.배송 조회   4.구매 목록  5.종료");
-		System.out.print("선택 하세요. >>>> ");
-		
+		boolean run = true;
+		while (run) {
+			System.out.println(":::: 쇼핑몰 사용자 마이페이지 ::::");
+			System.out.println("1:장바구니   2:찜 상품   3.배송 조회   4.구매 목록  5.종료");
+			System.out.print("선택 하세요. >>>> ");
+			
+			Scanner sc = new Scanner(System.in);
+			int menu= sc.nextInt();
 
-		int menu=0;
-		Scanner sc = new Scanner(System.in); //System.in은 표준입력
-
-		switch (menu) {
-			case 1:    //menu==1 ?
-				System.out.println("장바구니 🎁🎁🎁🎁 .많이 담아 주세요.");
-				break;	   //아래의 명령어들을 실행하지 않고 switch{ .. } 를 끝냅니다.
-			case 2:   //menu==2 ?
-				System.out.println("찜 상품 입니다.❤❤");
-				break;
-			case 3:   //menu==3 ?
-				System.out.println("배송 조회 🚚🚛🚚🚛 ");
-				break;
-			case 4:   //menu==4 ?
-				System.out.println("구매 목록 입니다.");
-				break;
-			case 5:   //menu==5 ?
-				System.out.println("종료 입니다.");
-				break;
-			default:   //값이 1,2,3,4,5 모두 아닌경우
-				System.out.println("잘못된 선택 입니다.");
-				break;
-		}   //switch 끝
-		
+				switch (menu) {
+					case 1:    //menu==1 ?
+						System.out.println("장바구니 🎁🎁🎁🎁 .많이 담아 주세요.");
+						break;	   //아래의 명령어들을 실행하지 않고 switch{ .. } 를 끝냅니다.
+					case 2:   //menu==2 ?
+						System.out.println("찜 상품 입니다.❤❤");
+						break;
+					case 3:   //menu==3 ?
+						System.out.println("배송 조회 🚚🚛🚚🚛 ");
+						break;
+					case 4:   //menu==4 ?
+						System.out.println("구매 목록 입니다.");
+						break;
+					case 5:   //menu==5 ?
+						System.out.println("종료 입니다.");
+						run=false;
+					default:   //값이 1,2,3,4,5 모두 아닌경우
+						System.out.println("잘못된 선택 입니다.");
+						break;
+				}   //switch 끝
+			}
+		}//while end
+		System.out.println("System closed");
 	} //main 끝
 
-} //class end
+ //class end
