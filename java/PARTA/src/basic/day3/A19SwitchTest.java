@@ -1,5 +1,6 @@
 package basic.day3;
 
+import java.util.Scanner;//키보드 입력 클래스 
 //switch 는 if 조건식이 equal (==) 을 여러번 검사하는 경우에 사용.
 //		   조건식에서 검사하는 값은 정수(byte,short,int,long), char, 문자열 형식만 가능합니다.
 public class A19SwitchTest {
@@ -11,8 +12,9 @@ public class A19SwitchTest {
 		System.out.print("선택 하세요. >>>> ");
 		
 
-		int menu;
-		
+		int menu=0;
+		Scanner sc = new Scanner(System.in); //System.in은 표준입력
+
 		switch (menu) {
 			case 1:    //menu==1 ?
 				System.out.println("장바구니 🎁🎁🎁🎁 .많이 담아 주세요.");
