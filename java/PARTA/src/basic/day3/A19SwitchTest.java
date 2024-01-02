@@ -7,12 +7,13 @@ public class A19SwitchTest {
 
 	public static void main(String[] args) {
 		boolean run = true;
+		Scanner sc = new Scanner(System.in);
+
 		while (run) {
 			System.out.println(":::: 쇼핑몰 사용자 마이페이지 ::::");
 			System.out.println("1:장바구니   2:찜 상품   3.배송 조회   4.구매 목록  5.종료");
 			System.out.print("선택 하세요. >>>> ");
 			
-			Scanner sc = new Scanner(System.in);
 			int menu= sc.nextInt();
 
 				switch (menu) {
@@ -35,9 +36,9 @@ public class A19SwitchTest {
 						System.out.println("잘못된 선택 입니다.");
 						break;
 				}   //switch 끝
-			}
+		
 		}//while end
-		System.out.println("System closed");
+	
 	} //main 끝
 
- //class end
+} //class end
