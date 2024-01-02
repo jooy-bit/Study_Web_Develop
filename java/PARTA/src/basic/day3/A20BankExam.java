@@ -1,4 +1,5 @@
 package basic.day3;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class A20BankExam {
@@ -9,6 +10,8 @@ public class A20BankExam {
     int balance=0;//잔액
     boolean run = true;
 
+        //세자리 마다 , 찍기: 
+    DecimalFormat df = new DecimalFormat("금 #,### 원");
 
     
 
@@ -24,16 +27,19 @@ public class A20BankExam {
                 System.out.print("예금액 >");
                 money = sc.nextInt();
                 balance += money;
-                System.out.println("고객님의 잔액은 " + balance + "원 입니다");
+                System.out.println("고객님의 잔액은 " + df.format(balance) + " 입니다");
                 break;
             case 2:
                 System.out.print("출금액> ");
                 money = sc.nextInt();
-                balance -= money;
-                System.out.println("고객님의 잔액은 " + balance + "원 입니다");
+                if (money>balance) System.out.println("잔액 이상의 금액은 출금 불가합니다.");
+                else{
+                    balance -= money;
+                    System.out.println("고객님의 잔액은 " + df.format(balance) + " 입니다");
+                }
                 break;
             case 3:
-                System.out.println("현재잔고: "+ balance );
+                System.out.println("현재잔고: "+ df.format(balance) );
                 break;
             case 4:
                 System.out.println("프로그램을 종료합니다.");                
