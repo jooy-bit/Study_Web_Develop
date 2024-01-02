@@ -32,7 +32,7 @@ public class A20BankExam {
             case 2:
                 System.out.print("출금액> ");
                 money = sc.nextInt();
-                if (money>balance) System.out.println("잔액 이상의 금액은 출금 불가합니다.");
+                if (money<balance) System.out.println("잔액보다 큰 금액은 출금 불가합니다.");
                 else{
                     balance -= money;
                     System.out.println("고객님의 잔액은 " + df.format(balance) + " 입니다");
@@ -48,10 +48,7 @@ public class A20BankExam {
             default:
                 System.out.println("선택값은 1~4입니다.");
                 break;
-        }//switch end
-    }
-        
-    }//while end
-    
-
-}
+        }//switch d
+    }//while d
+    }//main d
+}//class d
