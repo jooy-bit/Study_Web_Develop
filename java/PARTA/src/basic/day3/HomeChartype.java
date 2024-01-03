@@ -18,7 +18,7 @@ package basic.day4.SSSS;
 
 
  */
-public class HomeChartype {
+public class HomeCharType {
     public static void main(String[] args) {
         String message = "Hello* Java Hi* Linux~~~";
         int upperCount = 0; //대문자의 갯수  65- 90
