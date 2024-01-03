@@ -10,10 +10,20 @@ public class ProbStringReverse {
        
         for (int i = message.length()-1; i >= 0; i--)
         /*{ //char temp = message.charAt(i);*/ 
-            System.out.println(message.charAt(i)/*temp */);
+            System.out.print(message.charAt(i)/*temp */);
         //}
-       
-       
+        
+        
+        
+        
+        int ci = message.length()-1;
+        for (int i = 0; i < message.length(); i++) {
+        char temp =message.charAt(i);           //i=0일떄
+        messageArray[ci]=temp;                  //ci=10
+        ci--;
+       }
+        System.out.println(messageArray);
+
         //2)리버스 이용
         System.out.println("StringBuffer");
         StringBuffer sb = new StringBuffer(message);//StringBuffer 생성
