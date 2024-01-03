@@ -1,4 +1,4 @@
-package basic.day4.SSSS;
+package basic.day3;
 /*
 :::: [과제-2024/01/03 22시까지 제출] 문자열을 구성하는 문자의 종류 분석하기 ::::
 1) 문자열을 임의로 저장합니다. 예시 : "Hello* Java Hi* Linux~~~" 
