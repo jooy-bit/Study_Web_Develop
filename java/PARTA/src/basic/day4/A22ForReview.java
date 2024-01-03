@@ -23,15 +23,16 @@ public class A22ForReview {
         System.out.println(String.format("문제2) 1부터 %d 까지의 합계 : %d",n,longResult));
         System.out.println("문제2) 1부터"+n+" 까지의 합계 : "+ longResult );
         //3)시작값 정수 m 부터 마지막 값 n까지 더하기
-        for (int i = 0; i <= n; i++) ;
+        for (int i = 0; i <= n; i++) m+=m+i;
 
         // //4)시작값 정수 m 부터 마지막 값 n까지 곱하기
-        for (int i = 0; i <= n; i++) { longResult
-        }
+        m=4;
+        longResult=1;
+        for (int i = m; i <= n; i++) longResult*=i;
         
         // //5) 2의 n승 구하기 : 2를 n번 곱하기 (2진수에서 사용되는 연산)
-        for (int i = 0; i <= n; i++) {
-        }
+        longResult=1;
+        for (int i = 0; i <= n; i++) longResult*=2;
     
     }
 
