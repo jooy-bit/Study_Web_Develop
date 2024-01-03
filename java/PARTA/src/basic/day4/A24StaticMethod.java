@@ -3,17 +3,22 @@ package basic.day4;
 public class A24StaticMethod {
     
     //메소드가 실행될 떄 실매개 변수 값이 형식매개변수로 전달, 저장됩니다.
+    //메소드 목적
+    //특정 처리 기능을 main에서 따로 분리하기 
+    // 한번 만들어진 메소드는 여러번 필요할 때 실행할 수 있습니다.
+    // 메소드는 클래스의 구성요소
     /**
      * @param args
      */
     public static void main(String[] args){
-    argumentTest();
-    argumentTest(8,4);
-    int result = resultIntTest();
-    System.out.println("resultIntTest() : "+result);
-    boolean the = resultBooleanTest();
-    System.out.println(the);
-    
+    // argumentTest();
+    // argumentTest(8,4);
+    // int result = resultIntTest();
+    // System.out.println("resultIntTest() : "+result);
+    // boolean resultBoolean = resultBooleanTest();
+    // System.out.println(resultBoolean);
+    double k =add(3.56, 32, 4);
+    System.out.println(k);
 
 
 }
@@ -50,6 +55,8 @@ public class A24StaticMethod {
             return 'A';
         }
 
-        
+        public static double add(double a, long b, int c){
+            return a+b+c; //double type can input double long int etc
+        }
 
 }//
