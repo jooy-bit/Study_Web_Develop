@@ -2,6 +2,7 @@ package basic.day4;
 
 public class A25MySampleMethod {
     public static void main(String[] args) {
+        int result =addMToN(2,5);
         System.out.println(sumToN(7));
         System.out.println(MultiplyTon(7));
         System.out.println(sumMToN(7,10));
@@ -12,7 +13,14 @@ public class A25MySampleMethod {
     } //main 
 
 
-//1) sumToN 
+private static int addMToN(int i, int j) {
+        int sum=i;
+        for (int k = 0; k <j; k++) sum+=k;
+        return sum;
+    }
+
+
+    //1) sumToN 
     public static int sumToN(int n){
         int sum=0;
         for (int i = 1; i <= n; i++) sum+=i;
