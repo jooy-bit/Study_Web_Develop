@@ -7,7 +7,7 @@ public class A25MySampleMethod {
         System.out.println(sumMToN(7,10));
         System.out.println(MultiplyMToN(4, 7));
         System.out.println(multiplyNof2(7));
-        printGuguDan(4);
+        printGuguDan(7);
     // 메소드 안에서 출력문 만들지 않기
     } //main 
 
@@ -47,12 +47,11 @@ public class A25MySampleMethod {
 
 // 구구단 '출력'하는 메소드, 리턴은 void, printGuguDan
     public static void printGuguDan(int k){
-        int xx =1;
-        for ( int i= 1; i < 10; i++) {
-            for (int j= 1; j <= k; j++) {
-                xx= i*j;
-        
-            System.out.println(String.format("%3d x %3d = %3d",i,j,xx));
+        int result =1;
+        for ( int i= 1; i <= k; i++) {
+            for (int j= 1; j < 10; j++) {
+                result= i*j;
+                System.out.println(String.format("%3d x %3d = %3d",i,j,result));
             }
         }
     }
